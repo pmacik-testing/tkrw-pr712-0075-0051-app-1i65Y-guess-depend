@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-icih
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0051-tenant/tkrw-pr712-0075-0051-app/devfile-sample-icih@sha256:a1a198903d5ebbb91af8dac55274dce6d4ef2776f697d303fdf8269fcbd29292
+        name: my-nodejs
+        resources: {}
+status: {}
